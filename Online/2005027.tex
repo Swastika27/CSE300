@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\title{July2023 CSE300 Week9 Online Evaluation}
+\author{2005ABC}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    
+    \section*{DNA vs RNA comparison}
+    
+    \begin{table}[h]
+    	\centering
+    	\begin{tabular}{c c}
+    		\includegraphics{DNA.png} & \includegraphics{RNA.png} \\
+    		\textit{Deoxyribonucleic acid} & \textit{Ribonucleic acid}\\
+    	\end{tabular}
+    \end{table}
+    
+    \section*{SPEC CPU Benchmark}
+    \begin{table}[h]
+    	\centering
+    	\caption{Table 1: SPECINTC2006 benchmark programs.}
+    	\begin{tabular}{|c | c | c | c |}
+    		\hline
+    		\multirow{2}{*}{Name} & \multicolumn{3}{c|}{Details}\\
+    		\cline{2-4}
+    		& Description & Instruction Count & Reference Time \\
+    		\hline
+    		gcc & GNU C Compiler & 794 G & 8050 sec \\
+    		\hline
+    		h264avc & Video Compression & 3793 G & 22130 sec\\
+    		\hline
+    		\multicolumn{4}{l}{The table is taken from here \cite{cpu}}\\
+    	\end{tabular}
+    \end{table}
+    
+    Table 1 shows some of the SPEC CPU benchmark programs that we can use to assess
+    the execution performance of different computational processors.
+    
+    \newpage
+    
+    \section*{Newton’s Law of Universal Gravitation}
+    Newton’s law of universal gravitation states that any two particles in this universe attract
+    each other with a force that is proportional to the product of their masses and inversely
+    proportional to the square of the distance between their centers. This is one of the foundational laws in classical physics that was first described and formulated in Sir Isaac Newton’s
+    famous \textit{Principia} book \cite{gravity} .
+    
+    The equation takes the form $F_g = G\frac{m_1m_2}{r^2}$ or $F_{ab} = -G\frac{m_am_b}{|r_{ab}|^2}\hat{r_{ab}} $ among many other forms.
+    
+    \section*{Display This Section Too!}
+    You need to display this section in your output PDF file. This section contains information
+    that may help you prepare the bibliography section.
+    
+    \begin{enumerate}
+    	\item \textbf{Citation about SPEC CPU Benchmark} 
+    	\begin{itemize}
+    		\item \textbf{Author:} David A. Patterson, John L. Hennessy
+    		\item \textbf{Title:} Computer Organization and Design MIPS Edition
+    		\item \textbf{Publisher:} Morgan Kaufmann
+    		\item \textbf{Year:} 2013
+    		\item \textbf{Edition:} 5th
+    	\end{itemize}
+    	
+    	\item \textbf{Citation about Universal Gravitation}
+    	\begin{itemize}
+    		\item \textbf{Author:} Isaac Newton
+    		\item \textbf{Title:} Philosophiae Naturalis Principia Mathematica
+    		\item \textbf{Publisher:} Jussu Societatis Regiae ac Typis Josephi Streate
+    		\item \textbf{Year:} 1687
+    	\end{itemize}
+
+    \end{enumerate}
+    
+    \bibliographystyle{plain}
+    \bibliography{2005027}
+\end{document}
